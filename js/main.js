@@ -1,8 +1,3 @@
-/*
-*    main.js
-*    Mastering Data Visualization with D3.js
-*    6.2 - Adding a legend
-*/
 
 var margin = { left:80, right:20, top:50, bottom:100 };
 var height = 500 - margin.top - margin.bottom, 
@@ -107,7 +102,7 @@ d3.json("data/data.json").then(function(data){
         })
     });
 
-    // Run the code every 0.1 second
+    // Run code every 0.1 second
     d3.interval(function(){
         // At the end of our data, loop back
         time = (time < 214) ? time+1 : 0
